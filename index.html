@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="https://imgur.com/5bBtwit" type="image/x-icon">
+    <title>THAI HOA | HOME</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <meta name="author" content="THAI HOA">
+    <meta property="og:title" content="THAI HOA | HOME">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://daikhang.tk/">
+    <meta property="og:image" content="https://imgur.com/5bBtwit">
+    <meta property="og:image:width" content="120">
+    <meta property="og:image:height" content="120">
+    <meta property="og:site_name" content="THAIHOA | HOME">
+    <meta name="theme-color" content="#00FFFF" />
+  </head>
+
+  <body class="iBorder" onLoad="onCreate()">
+    <div class="iBlur">
+      <div class="iTopnav">
+        <a class="iActive">HOME</a>
+        <a style="color:rgb(229, 255, 0);">
+          <span id="iFps">60.0</span> FPS</a>
+      </div>
+      <br>
+      <p align="center">
+        <img class="iBlob" src="https://i.pinimg.com/originals/49/66/2a/49662a3676890bc79ea9732220f26bf7.gif" width="96" height="96" alt="ERROR">
+      </p>
+      <h2 class="iName" align="center">
+        VO TRONG THAI HOA
+      </h2>
+      <h2 class="iDesc">
+        Hey brother, I am VO TRONG THAI HOA, I'm a developer.
+        <br>
+        I love to design and fuck multiple girls at once !
+      </h2>
+      <br>
+      <hr class="iNew">
+      <br>
+      <h2 class="iName">
+        Social Network
+      </h2>
+      <br>
+      <div class="iSocial">
+        <a id="iFacebook" onClick="iFacebook()">
+          <div class="iFacebook">
+            Facebook
+          </div>
+        </a>
+        <br>
+        <a id="iYoutube" onClick="iYoutube()">
+          <div class="iYoutube">
+            YouTube
+          </div>
+        </a>
+        <br>
+        <a id="iTiktok" onClick="iTiktok()">
+          <div class="iTiktok">
+            Tiktok
+          </div>
+        </a>
+        <br>
+        <a id="iZalo" onClick="iZalo()">
+          <div class="iZalo">
+            Zalo
+          </div>
+        </a>
+        <br>
+      </div>
+      <br>
+      <hr class="iNew">
+      <br>
+      <div class="iName">
+        <h2>
+          Banks & Wallets
+        </h2>
+      </div>
+      <div class="iProject">
+        <p class="iProjectTitle">
+          Mb Bank
+        </p>
+        <p class="iProjectText">
+          STK 0363644360 || CTK VO TRONG THAI HOA
+        </p>
+      </div>
+      <br>
+      <div class="iProject">
+        <p class="iProjectTitle">
+          Momo wallet
+        </p>
+        <p class="iProjectText">
+          STK 0363644360 || CTK VO TRONG THAI HOA
+        </p>
+      </div>
+      <br>
+      <div class="iProject">
+        <p class="iProjectTitle">
+          The Sieu Re
+        </p>
+        <p class="iProjectText">
+          STK: cclolmon || MAIL: votrongthaihoa@gmail.com
+        </p>
+      </div>
+      <br>
+      <br>
+      <hr class="iNew">
+      <footer class="iFooter iShrim">
+        <p class="iCopyright">
+          Created by VO TRONG THAI HOA
+          <br>
+          <strong>
+            All rights reserved - © 2022
+          </strong>
+        </p>
+      </footer>
+      <noscript>
+        <h1 class="iNoScript">Turn On JavaScript For Better Experience !</h1>
+      </noscript>
+    </div>
+    <div id="iToast">
+      Welcome to the website THAI HOA :)
+    </div>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script>
+      var fps = document.getElementById("iFps");
+      var startTime = Date.now();
+      var frame = 0;
+
+      function iFpsMeter() {
+        var time = Date.now();
+        frame++;
+        if (time - startTime > 1000) {
+          fps.innerHTML = (frame / ((time - startTime) / 1000)).toFixed(1);
+          startTime = time;
+          frame = 0;
+        }
+        window.requestAnimationFrame(iFpsMeter);
+        iFpsMeter();
+
+    </script>
+  </body>
+
+</html>
